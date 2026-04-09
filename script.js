@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         texto.style.transform = "translateY(120px) scale(0.4)";
         texto.style.opacity = "0";
 
-        // Reinicia animación (truco necesario)
+        // Reinicia animación (truco)
         texto.offsetHeight;
 
         // Entrada
