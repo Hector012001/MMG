@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#texto {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    color: #ff0000;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 15px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px #ff0000;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+}

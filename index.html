@@ -1,0 +1,67 @@
+<!index.html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación Grafiti</title>
+
+    <!-- Fuente estilo grafiti -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 80px;
+            color: red;
+            text-shadow: 
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 40px #ff0000;
+            opacity: 0;
+            animation: graffitiAnim 4s infinite;
+        }
+
+        @keyframes graffitiAnim {
+            0% {
+                transform: translateY(100px) scale(0.5);
+                opacity: 0;
+            }
+            25% {
+                transform: translateY(0) scale(1.1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            75% {
+                transform: translateY(-50px) scale(0.8);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-150px) scale(0.3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ERES UN MMG</h1>
+
+</body>
+</html>
